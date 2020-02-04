@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Twitterの外部からリンクを開いた時の新ツイートページを無効化",
+    "description": "Twitter のツイートページを開いた際のリファラを twitter.com の JavaScript から読み取れないようにして、Twitter の外部からリンクを開いた時の新ツイートページ (現在では一部ユーザーのみのA/Bテスト中?) を無効化します。",
+    "version": "0.1.0",
+    "content_scripts": [{
+        "matches": ["https://twitter.com/*/status/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }],
+    "permissions": ["https://twitter.com/"],
+    "web_accessible_resources": ["inject.js"]
+}

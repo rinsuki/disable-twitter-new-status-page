@@ -1,0 +1,1 @@
+Object.defineProperty(window.document, "referrer", {value: ""})
