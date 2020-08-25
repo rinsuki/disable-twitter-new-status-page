@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noEmit": true,
+        "allowJs": true,
+        "typeRoots": ["node_modules/web-ext-types"]
+    },
+    "include": ["dist/**/*.js"]
+}

@@ -8,6 +8,9 @@
         "js": ["content.js"],
         "run_at": "document_end"
     }],
-    "permissions": ["https://twitter.com/"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["https://twitter.com/", "webNavigation"],
     "web_accessible_resources": ["inject.js"]
 }
